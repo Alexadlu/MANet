@@ -38,3 +38,6 @@ fainlly excute train.py
 in the tracking/run_tracker.py file  you need change dataset path  and save result file dirpath 
 in the tracking/options.py file you need set model file path ,and set learning rate depend on annotation.
 in tracking and train stage you need update modules/MANet3x1x1_IC.py file depend on annotation.
+
+## Result
+https://github.com/Alexadlu/MANet/blob/master/MANet-rgbt234.png
