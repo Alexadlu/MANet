@@ -32,12 +32,16 @@ you can use RGBT dataset as train data , in pretrain floder you need
 first genrate sequence list .pkl file use prepro_data.py ,
 sencod change your data path ,
 fainlly excute train.py
+
 pretrain model :https://drive.google.com/open?id=1aO6LhOTxmpd7o_JXPLPjL3LsrQ5oqbl7
+
 ## Run tracker
 
 in the tracking/run_tracker.py file  you need change dataset path  and save result file dirpath 
 in the tracking/options.py file you need set model file path ,and set learning rate depend on annotation.
 in tracking and train stage you need update modules/MANet3x1x1_IC.py file depend on annotation.
+
 tracking model:https://drive.google.com/open?id=1Png508G4kQPI6HNewKQ4cfS36CvoSFSN
+
 ## Result
  ![image](https://github.com/Alexadlu/MANet/blob/master/MANet-rgbt234.png)
