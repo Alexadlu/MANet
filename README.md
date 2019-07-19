@@ -40,4 +40,4 @@ in the tracking/options.py file you need set model file path ,and set learning r
 in tracking and train stage you need update modules/MANet3x1x1_IC.py file depend on annotation.
 
 ## Result
-![image] (https://github.com/Alexadlu/MANet/blob/master/MANet-rgbt234.png)
+ ![image](https://github.com/Alexadlu/MANet/blob/master/MANet-rgbt234.png)
