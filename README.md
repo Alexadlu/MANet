@@ -1,4 +1,6 @@
 # MANet
+##MANet result in paper have upload in here, this reslut PR_0.777 SR_0.539 on RGBT234, PR_0.894 SR_0.724 on GTOT.welcome everyone use it
+
 Multi-Adapter RGBT Tracking  implementation on Pytorch
 
 this code is update version based on submitted for VOT RGBT race code simplified version.
