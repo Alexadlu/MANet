@@ -48,22 +48,22 @@ We use imagenet-vgg-m.mat as our pretrain model.
 
 ## Train
 
-you can choose two stage train or end2end train
+You can choose two stage train or end2end train
 ### two stage train: 
-* stage1. use RGBT dataset to train all network, and then save finally model; 
-* stage2. you only need to load the parameters of GA and IA from the stage1 saved model, and use same RGBT dataset to train the MA and finetune the GA and IA.   
+* Stage1. use RGBT dataset to train all network, and then save finally model; 
+* Stage2. you only need to load the parameters of GA and IA from the stage1 saved model, and use same RGBT dataset to train the MA and finetune the GA and IA.   
 ### end2end train:
 * Here train method is same with [MDNet](https://github.com/HyeonseobNam/py-MDNet)
 
-pretrain model :https://drive.google.com/open?id=1aO6LhOTxmpd7o_JXPLPjL3LsrQ5oqbl7
+Pretrain model :https://drive.google.com/open?id=1aO6LhOTxmpd7o_JXPLPjL3LsrQ5oqbl7
 
 ## Run tracker
 
-in the tracking/run_tracker.py file, you need to change dataset path and save result file dirpath 
-in the tracking/options.py file, you need to set model file path and set learning rate depend on annotation.
-in tracking and train stages, you need to update modules/MANet3x1x1_IC.py file depend on annotation.
+In the tracking/run_tracker.py file, you need to change dataset path and save result file dirpath 
+In the tracking/options.py file, you need to set model file path and set learning rate depend on annotation.
+In tracking and train stages, you need to update modules/MANet3x1x1_IC.py file depend on annotation.
 
-tracking model:https://drive.google.com/open?id=1Png508G4kQPI6HNewKQ4cfS36CvoSFSN
+Tracking model:https://drive.google.com/open?id=1Png508G4kQPI6HNewKQ4cfS36CvoSFSN
 
 ## Result
  ![image](https://github.com/Alexadlu/MANet/blob/master/MANet-rgbt234.png)
