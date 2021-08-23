@@ -22,13 +22,11 @@
 
 
 ## MANet result
-MANet result in paper have upload in here, 
-the report reslut is PR_0.777 SR_0.539 on RGBT234, PR_0.894 SR_0.724 on GTOT.
+Here, we only upload the result file of paper (PR_0.777 SR_0.539 on RGBT234, PR_0.894 SR_0.724 on GTOT.)
 
-Multi-Adapter RGBT Tracking  implementation on Pytorch
+This code is update version based on submitted for VOT2019-RGBT challenge code simplified version.
 
-this code is update version based on submitted for VOT RGBT race code simplified version.
-So there are some differences from MANET's paper. 
+So there are some differences from MANet's paper.
 
 ## Prerequisites
 
@@ -40,32 +38,30 @@ Ubuntu 16.04
 * pytorch == 0.3.1
 * numpy
 * PIL
-* by yourself need install some library functions 
+* some others library functions 
 
 ## Pretrained model for MANet
 
-In our tracker, we use an VGG-M Net variant as our backbone, which is end-to-end trained for visual tracking.
+In our tracker, we use [MDNet](https://github.com/HyeonseobNam/py-MDNet) as our backbone and extend to multi-modal tracker.
 
-The train on gtot model file in models folder,name called MANet-2IC.pth ,you can use this tracking rgbt234
-
-Then,You need to modify the path in the tracking/options.py file depending on where the file is placed. 
-It is best to use an absolute path.
-you can change code version of CPU/GPU in this flie
+We use imagenet-vgg-m.mat as our pretrain model.
 
 ## Train
 
-you can use RGBT dataset as train data , in pretrain floder you need 
-first genrate sequence list .pkl file use prepro_data.py ,
-sencod change your data path ,
-fainlly excute train.py
+you can choose two stage train or end2end train
+### two stage train: 
+* stage1. use RGBT dataset to train all network, and then save finally model; 
+* stage2. you only need to load the parameters of GA and IA from the stage1 saved model, and use same RGBT dataset to train the MA and finetune the GA and IA.   
+### end2end train:
+* Here train method is same with [MDNet](https://github.com/HyeonseobNam/py-MDNet)
 
 pretrain model :https://drive.google.com/open?id=1aO6LhOTxmpd7o_JXPLPjL3LsrQ5oqbl7
 
 ## Run tracker
 
-in the tracking/run_tracker.py file  you need change dataset path  and save result file dirpath 
-in the tracking/options.py file you need set model file path ,and set learning rate depend on annotation.
-in tracking and train stage you need update modules/MANet3x1x1_IC.py file depend on annotation.
+in the tracking/run_tracker.py file, you need to change dataset path and save result file dirpath 
+in the tracking/options.py file, you need to set model file path and set learning rate depend on annotation.
+in tracking and train stages, you need to update modules/MANet3x1x1_IC.py file depend on annotation.
 
 tracking model:https://drive.google.com/open?id=1Png508G4kQPI6HNewKQ4cfS36CvoSFSN
 
