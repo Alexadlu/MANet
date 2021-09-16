@@ -51,7 +51,7 @@ We use imagenet-vgg-m.mat as our pretrain model.
 You can choose two stage train or end2end train
 ### two stage train: 
 * Stage1. use RGBT dataset to train all network, and then save finally model; 
-* Stage2. you only need to load the parameters of GA and IA from the stage1 saved model, and use same RGBT dataset to train the MA and finetune the GA and IA.   
+* Stage2. you only need to load the parameters of GA from the stage1 saved model, and use same RGBT dataset to train the MA and IA while fix GA.   
 ### end2end train:
 * Here train method is same with [MDNet](https://github.com/HyeonseobNam/py-MDNet)
 
