@@ -31,7 +31,7 @@ So there are some differences from MANet's paper.
 ## Prerequisites
 
 CPU: Intel(R) Core(TM) i7-7700K CPU @ 3.75GHz
-GPU: NVIDIA GTX1080
+GPU: NVIDIA GTX1080（8GB）
 Ubuntu 16.04
 
 * python2.7
