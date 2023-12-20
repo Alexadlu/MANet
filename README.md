@@ -42,26 +42,26 @@ Ubuntu 16.04
 
 ## Pretrained model for MANet
 
-In our tracker, we use [MDNet](https://github.com/HyeonseobNam/py-MDNet) as our backbone and extend to multi-modal tracker.
+In our tracker, we use [MDNet](https://github.com/HyeonseobNam/py-MDNet) as our backbone and extend it to a multi-modal tracker.
 
 We use imagenet-vgg-m.mat as our pretrain model.
 
 ## Train
 
-You can choose two stage train or end2end train
+You can choose either a two stage training or end2end training
 ### two stage train: 
-* Stage1. use RGBT dataset to train all network, and then save finally model; 
-* Stage2. you only need to load the parameters of GA from the stage1 saved model, and use same RGBT dataset to train the MA and IA while fix GA.   
+* Stage1: Use the RGBT dataset to train whole network, then save the final model; 
+* Stage2: Load only the parameters of GA from the model saved in Stage1, and use the same RGBT dataset to train MA and IA while keeping GA fixed.   
 ### end2end train:
-* Here train method is same with [MDNet](https://github.com/HyeonseobNam/py-MDNet)
+* The training method here is the same as with [MDNet](https://github.com/HyeonseobNam/py-MDNet)
 
 Pretrain model :https://drive.google.com/open?id=1aO6LhOTxmpd7o_JXPLPjL3LsrQ5oqbl7
 
 ## Run tracker
 
-In the tracking/run_tracker.py file, you need to change dataset path and save result file dirpath 
+In the tracking/run_tracker.py file, you need to change the dataset path and save the result file directory. 
 In the tracking/options.py file, you need to set model file path and set learning rate depend on annotation.
-In tracking and train stages, you need to update modules/MANet3x1x1_IC.py file depend on annotation.
+For the testing and training stages, update the 'modules/MANet3x1x1_IC.py' file depending on the annotation.
 
 Tracking model:https://drive.google.com/open?id=1Png508G4kQPI6HNewKQ4cfS36CvoSFSN
 
