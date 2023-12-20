@@ -22,11 +22,11 @@
 
 
 ## MANet result
-Here, we only upload the result file of paper (PR_0.777 SR_0.539 on RGBT234, PR_0.894 SR_0.724 on GTOT.)
+Here, we have only uploaded the result file of the paper (PR_0.777 SR_0.539 on RGBT234, PR_0.894 SR_0.724 on GTOT.)
 
-This code is update version based on submitted for VOT2019-RGBT challenge code simplified version.
+This code is an updated version, simplified from the one we submitted for the VOT2019-RGBT challenge.
 
-So there are some differences from MANet's paper.
+Consequently, there are some differences compared to MANet's paper.
 
 ## Prerequisites
 
